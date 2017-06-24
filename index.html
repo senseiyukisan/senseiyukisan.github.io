@@ -12,13 +12,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p class="text-center">Hello World</p>
           <table class="table" id="mytable">
             <tr>
               <th>Item</th>
               <th>Check?</th>
             </tr>
-            <script type="text/javascript">
+            <script>
               var items = [
               "Ticket",
               "Zelt",
@@ -62,8 +61,11 @@
               "Edding"];
 
               for (var i = 0; i < items.length; i++) {
-                document.write('<tr><td>' + items[i] + '</td></tr>');
+                document.write('<tr><td>' + items[i] + '</td>' +
+                  '<td><div class="checkbox"><label><input type="checkbox" id="blankCheckbox" value="option1"></label></div></td></tr>');
               }
+
+
             </script>
           </table>
         </div>
